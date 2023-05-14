@@ -1,16 +1,17 @@
 version: '3'
+# 编译前端请先执行 git submodule updata --init --recursive
+# 或者 git clone https://gitee.com/jeequan/jeepay-ui.git
 
 # Maven 依赖提前编译，修改 MQ 队列 (修改 jeepay-components-mq 依赖) 也需要重新运行此命令
 # docker build -t jeepay-deps:latest -f docs/Dockerfile .
 # 启动命令 docker-compose up
 # 启动并运行在后台  docker-compose up -d
 # 重新编译 docker-compose up --build
-# 重新创建 docker-composer up --force-recreate
-# 重新编译并覆盖之前的 docker-composer up --build --force-recreate
+# 重新创建 docker-compose up --force-recreate
+# 重新编译并覆盖之前的 docker-compose up --build --force-recreate
 
 
-# 编译前端请先执行 git submodule updata --init --recursive
-# 或者 git clone https://gitee.com/jeequan/jeepay-ui.git
+
 
 services:
   mysql:
